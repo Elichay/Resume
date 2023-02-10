@@ -1,0 +1,77 @@
+.body-experience {
+
+    max-width: unset;
+    line-height: 1.7;
+
+    .body-xp {
+
+        &:nth-last-child(3) {
+            padding-bottom: 2rem;
+        }
+
+        &>* {
+            margin-left: 5rem;
+        }
+
+        &>.body-xp-header {
+            margin-top: 0.8rem;
+            margin-left: 0;
+        }
+
+
+        .body-xp-header {
+
+            .xp-subject {
+                margin-left: 4px;
+                font-weight: 600;
+                text-decoration: underline;
+
+                .body-title-hsbc {
+                    color: #db0011;
+                }
+
+                .body-title-disc {
+                    color: #3a880f;
+                }
+
+            }
+
+
+            .body-title {
+                font-style: italic;
+            }
+
+
+            .body-year {
+                font-size: 0.9rem;
+            }
+        }
+
+        .body-xp-txt {}
+
+        .body-xp-prev {
+
+
+            .prev-title {}
+
+            .prev-txt {}
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+    .body-diplomas {
+        display: none;
+
+        @include for-mobile-layout {
+            display: unset;
+        }
+    }
+}

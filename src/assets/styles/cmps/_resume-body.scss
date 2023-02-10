@@ -1,0 +1,67 @@
+.resume-body {
+    grid-template-columns: 1.45fr 1fr;
+
+    @include for-mobile-layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    .body-about-left {
+        line-height: 1.8;
+        min-width: 58.333%;
+    }
+
+
+
+    .body-about-right {
+
+        max-width: 400px;
+        // margin-bottom: 2rem;
+        position: relative;
+
+        @include for-mobile-layout {
+            max-width: unset;
+        }
+    }
+
+
+
+    .pdf-icon {
+
+        color: #b21206;
+
+        &:hover {
+            color: #fa0f00;
+        }
+    }
+
+
+}
+
+.section-box {
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgb(0 0 0 / 12%);
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+    margin-top: 32px;
+    max-width: 600px;
+    padding: 24px;
+    background-color: $clr-bg;
+
+
+
+    @include for-mobile-layout {
+        max-width: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        margin: 0;
+
+        &:nth-last-child(1) {
+            // margin-top: unset;
+        }
+    }
+
+}

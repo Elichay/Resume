@@ -1,0 +1,59 @@
+.body-skills-container{
+
+    position: sticky;
+    top: 130px;
+
+    .body-skills{
+        border: 1px solid #dedede;
+        border-radius: 12px;
+        box-shadow: 0 6px 16px rgb(0 0 0 / 12%);
+        flex-direction: column;
+        gap: 1rem;
+        background-color: $clr-bg;
+        justify-content: space-between;
+        margin-left: 18.3333333333%;
+        margin-top: 32px;
+        max-width: 400px;
+        padding: 24px;
+
+        @include for-mobile-layout {
+            max-width: unset;
+            margin-left: unset;
+            border-radius: unset;
+            box-shadow: unset;
+            margin: 0;
+          }
+
+        .body-skills-title{
+
+        }
+
+        .body-skills-list{
+
+            .body-skills-list-item{
+                padding-bottom: 16px;
+
+                .skill-title{
+                    font-size: 1.2rem;
+                    text-decoration: underline;
+                    
+                }
+                
+                .skill-txt{
+                
+                    
+                }
+            }
+        }
+
+        .body-skills-btn{
+
+
+            @include for-mobile-layout {
+                display: none;
+              }
+
+
+        }
+    }
+}

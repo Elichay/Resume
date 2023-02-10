@@ -1,0 +1,29 @@
+.app-footer {
+  padding-block: 14px;
+  border-top: 1px solid $clr-border;
+  background-color: $clr-white;
+  font-family: cereal-Book;
+  color: $clr-text-primary;
+  text-align: start;
+  font-size: 14px;
+  margin-top: 1rem;
+
+  &.fixed {
+    position: fixed;
+    bottom: 0vh;
+    z-index: 10;
+    right: 0;
+    left: 0;
+  }
+
+  @include for-mobile-layout {
+    margin-top: 0;
+    border-top: none;
+}
+
+  .footer-diplomas {
+    @include for-mobile-layout {
+      display: none;
+    }
+  }
+}

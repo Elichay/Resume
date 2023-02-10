@@ -1,0 +1,54 @@
+.contact-title {
+    color: $clr-text-primary;
+
+}
+
+
+.contact-detail {
+
+    line-height: 2.5rem;
+
+        .contact-icon {
+            padding: 1.5rem;
+
+            &:hover {
+                color: $clr-text-secondary;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+
+
+            @include for-mobile-layout {
+                padding-left: 0;
+            }
+        }
+        
+        .email-icon{
+            &:hover {
+                color: #6001d2;
+            }
+        }
+        .linkdein-icon{
+            &:hover {
+                color: #0a66c2;
+            }
+        }
+
+        .email-link{
+            @include for-mobile-layout {
+                font-size: 0.75rem;
+            }
+        }
+        
+        .linkdein-link{
+            @include for-mobile-layout {
+                display: none;
+            }
+        }
+        .linkdein-mini-link{
+            @include for-mobile-layout {
+                font-size: 0.75rem;
+            }
+        }
+
+}
